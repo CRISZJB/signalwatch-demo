@@ -1,4 +1,5 @@
 import { prisma } from "./db";
+import { normalizeQuoteAfterOverride } from "./quote-override";
 import type { CalendarItem, EvalContext, MarketEvent, MarketQuote } from "./types";
 
 /**
@@ -191,7 +192,10 @@ export function getQuotes(now = new Date()): Record<string, MarketQuote> {
       freshnessSec,
     };
     const ov = s.overrides[symbol];
-    if (ov) Object.assign(q, ov, { source: "SIMULATED" as const });
+    if (ov) {
+      Object.assign(q, ov);
+      Object.assign(q, normalizeQuoteAfterOverride(q));
+    }
     quotes[symbol] = q;
   }
 
