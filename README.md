@@ -37,7 +37,8 @@ npm run dev
 
 本地默认 **SQLite**（`prisma/dev.db`）。公网部署使用 **PostgreSQL**（`prisma-postgres/`），由 `DATABASE_URL` 自动切换。详见 [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)。
 
-**尚未推送 GitHub / 尚未部署 Render**（按当前约定先只做适配）。
+- **GitHub 源码仓库：** https://github.com/CRISZJB/signalwatch-demo（已上传，`main` 分支）
+- **Render 公网演示：** 尚未部署（配置已就绪，见 `render.yaml` 与部署文档）
 
 ## 常用脚本
 
@@ -96,7 +97,7 @@ npm run dev
 | [submission/evidence/](submission/evidence/) | 本轮真实命令日志与隔离库证据 |
 
 本轮实测摘要（2026-10-24 修复后）：Vitest **36** 通过；独立去重证据为 `DEDUP`；本地服务端/worker 调度已验证（线上 cron 未启用）；typecheck/lint/build 通过。  
-公开 Web URL、GitHub 仓库、60–180 秒演示视频：**待用户补齐**（详见 `submission/提交清单.md`）。
+公开 Web URL、60–180 秒演示视频：**待用户补齐**；GitHub 仓库已就绪（详见 `submission/提交清单.md`）。
 
 ### 长期调度（不依赖浏览器）
 

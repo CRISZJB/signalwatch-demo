@@ -1,12 +1,13 @@
-# Render Blueprint 参考（可选）。也可在控制台手动创建 Web Service + PostgreSQL。
-# 注意：请在控制台配置真实 DATABASE_URL，不要把密码写入本文件。
+# Render Blueprint：免费 Web Service + 免费 PostgreSQL
+# Node 版本请用 NODE_VERSION / .nvmrc / package.json engines（无 nodeVersion 字段）
+# 勿在本文件写入真实密码；SCHEDULER_SECRET 由平台 generateValue 生成
 
 services:
   - type: web
     name: signalwatch
     runtime: node
     plan: free
-    nodeVersion: "20"
+    branch: main
     buildCommand: npm install --legacy-peer-deps && npm run build:render
     startCommand: npm run start:render
     healthCheckPath: /api/health

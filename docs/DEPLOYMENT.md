@@ -38,7 +38,9 @@ npm run db:migrate:postgres  # 仅在有 Postgres URL 时部署迁移
 
 ### Node 版本
 
-**20**（见 `.nvmrc` / `package.json` engines）
+**20**（优先级从高到低：`NODE_VERSION` 环境变量 → `.nvmrc` → `package.json` engines）。
+
+Render Blueprint **没有** `nodeVersion` 字段；本仓库用 `NODE_VERSION=20` + `.nvmrc` 固定大版本。
 
 ### 依赖安装
 
@@ -72,7 +74,7 @@ npm run start:render
 node scripts/prisma-env.mjs migrate && next start -p ${PORT:-3000}
 ```
 
-Render 会注入 `PORT`。
+Render 会注入 `PORT`。首次启动会自动执行 PostgreSQL `prisma migrate deploy`。
 
 ### 健康检查
 
@@ -83,25 +85,39 @@ Render 会注入 `PORT`。
 
 | 变量 | 必需 | 说明 |
 |------|------|------|
-| `DATABASE_URL` | **是** | Render PostgreSQL 连接串（含 ssl） |
+| `DATABASE_URL` | **是** | Render PostgreSQL 连接串（Blueprint 用 `fromDatabase` 自动注入） |
+| `NODE_VERSION` | 建议 | `20` |
 | `NEXT_PUBLIC_APP_NAME` | 否 | 默认 SignalWatch |
 | `NEXT_PUBLIC_DATA_MODE` | 建议 | `SIMULATED` |
 | `ENABLE_SERVER_SCHEDULER` | 建议 | `1` 启用进程内调度 |
 | `SCHEDULER_INTERVAL_MS` | 否 | 默认 20000 |
-| `SCHEDULER_SECRET` | **强烈建议** | 保护 `/api/scheduler/tick` |
+| `SCHEDULER_SECRET` | **强烈建议** | 保护 `/api/scheduler/tick`；Blueprint 用 `generateValue`，**勿明文写入仓库** |
 | `DEMO_MARKET_SEED_JSON` | 否 | 可选演示覆盖；通常靠 DB 持久化 |
 
 ### 数据库迁移步骤
 
-1. 在 Render 创建 PostgreSQL，将连接串设为 Web Service 的 `DATABASE_URL`。
-2. 部署时 `start:render` 会执行 `prisma migrate deploy --schema=prisma-postgres/schema.prisma`。
-3. 表：Task / RuleVersion / ExecutionLog / Alert / SystemMeta。
+1. 使用 Blueprint 时：`render.yaml` 会同时创建免费 Web Service 与免费 PostgreSQL，并把 `DATABASE_URL` 注入到 Web Service。
+2. 手动创建时：先建 PostgreSQL，再在 Web Service 环境变量中绑定 Internal Database URL。
+3. 部署时 `start:render` 会执行 `prisma migrate deploy --schema=prisma-postgres/schema.prisma`。
+4. 表：Task / RuleVersion / ExecutionLog / Alert / SystemMeta。
 
 **尚未拿到真实连接串前，无法在本机对云库做连通性测试。**
 
 ### Blueprint
 
-可选参考根目录 `render.yaml`（勿写入真实密码）。
+根目录 `render.yaml` 可用于 Dashboard → New → Blueprint。勿写入真实密码。
+
+使用 Blueprint 时，一般**不必**再手动单独创建 PostgreSQL（YAML 已声明 `signalwatch-db`）。若你选择「只建 Web Service」的手动流程，才需要另行创建数据库并绑定 `DATABASE_URL`。
+
+### 免费套餐限制（务必知晓）
+
+| 资源 | 限制 |
+|------|------|
+| Free Web Service | 约 **15 分钟无流量后休眠**；下次访问需约 1 分钟冷启动；本地文件系统不持久 |
+| Free PostgreSQL | 约 **30 天后到期**；到期后有约 14 天宽限期，未升级将被删除；容量约 1 GB；每个 workspace **仅 1 个**免费库 |
+| 共用额度 | 每月有免费实例小时 / 出站带宽 / 构建分钟上限（见 Render Billing） |
+
+演示考核可接受休眠与冷启动；长期演示建议升级或定期续期数据库。
 
 ---
 
