@@ -21,8 +21,8 @@
 ## 技术栈
 
 - Next.js 15（App Router）+ TypeScript + Tailwind CSS
-- Prisma + SQLite（本地持久化）
-- Vitest 单元 / 逻辑端到端测试
+- Prisma + SQLite（本地）/ PostgreSQL（Render 公网）
+- Vitest 单元 / 逻辑测试
 
 ## 快速开始
 
@@ -37,8 +37,10 @@ npm run dev
 
 本地默认 **SQLite**（`prisma/dev.db`）。公网部署使用 **PostgreSQL**（`prisma-postgres/`），由 `DATABASE_URL` 自动切换。详见 [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)。
 
-- **GitHub 源码仓库：** https://github.com/CRISZJB/signalwatch-demo（已上传，`main` 分支）
-- **Render 公网演示：** 尚未部署（配置已就绪，见 `render.yaml` 与部署文档）
+- **GitHub 源码仓库：** https://github.com/CRISZJB/signalwatch-demo（`main`）
+- **公网演示：** https://signalwatch-sfkf.onrender.com  
+- **健康检查：** https://signalwatch-sfkf.onrender.com/api/health  
+- 部署说明与免费套餐限制见 [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
 
 ## 常用脚本
 
@@ -70,11 +72,12 @@ npm run dev
 
 ## 已知边界与未做事项
 
-- 未对接真实券商/行情实盘接口（需账号与合规授权）
-- 未实现推送渠道（邮件/企微/短信），预警落库可见
-- 自然语言覆盖常见中文句式，复杂口语可能需人工改规则
-- 单机 SQLite，未做多租户与水平扩展
-- 公开部署需自行配置托管平台与环境变量
+- 行情 / 事件 / 日历为 **SIMULATED**，非实时交易数据；不构成投资建议
+- 自然语言解析为**确定性解析器**，不是运行时在线大模型决策
+- 未对接真实券商交易系统；未实现邮件 / 企微 / 短信推送
+- 自然语言覆盖常见句式，复杂口语可能需人工改规则
+- 公开演示**不是**生产级多用户隔离环境
+- Render 免费 Web 可能休眠；免费 PostgreSQL 有到期限制；休眠期间进程内调度不能保证持续执行
 
 ## 文档索引
 
@@ -96,8 +99,8 @@ npm run dev
 | [submission/提交清单.md](submission/提交清单.md) | 齐备度核对 |
 | [submission/evidence/](submission/evidence/) | 本轮真实命令日志与隔离库证据 |
 
-本轮实测摘要（2026-10-24 修复后）：Vitest **36** 通过；独立去重证据为 `DEDUP`；本地服务端/worker 调度已验证（线上 cron 未启用）；typecheck/lint/build 通过。  
-公开 Web URL、60–180 秒演示视频：**待用户补齐**；GitHub 仓库已就绪（详见 `submission/提交清单.md`）。
+最终材料摘要（2026-10-24）：Vitest **45** 通过；业务用例文档 **30 = 29 通过 + 1 部分通过（C-05）**；公网已部署并可健康检查；去重可见 `DEDUP`。  
+**60–180 秒演示视频仍待用户录制**（脚本：`docs/VIDEO_SCRIPT.md`）。齐备度见 `submission/提交清单.md`。
 
 ### 长期调度（不依赖浏览器）
 

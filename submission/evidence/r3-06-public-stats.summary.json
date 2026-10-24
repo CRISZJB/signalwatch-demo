@@ -1,0 +1,71 @@
+{
+  "snapshotAtUtc": "2026-10-24T08:26:37.819Z",
+  "url": "https://signalwatch-sfkf.onrender.com/api/stats",
+  "httpStatus": 200,
+  "counts": {
+    "taskCount": 1,
+    "activeCount": 1,
+    "pausedCount": 0,
+    "degradedCount": 0,
+    "alertCount": 1,
+    "execCount": 28
+  },
+  "note": "counts are point-in-time; execCount increases with scheduler ticks",
+  "recentAlertSample": [
+    {
+      "id": "cmvm4wcwz002f6e6zckgik1ky",
+      "suppressed": true,
+      "suppressReason": "DEDUP_FINGERPRINT",
+      "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+      "createdAt": "2026-10-24T08:25:46.595Z",
+      "titleHasDedupLabel": true,
+      "messageHasCrossBelow": true,
+      "messageHasPrevClose1720": true
+    },
+    {
+      "id": "cmvm4un5y002b6e6z84kkreey",
+      "suppressed": true,
+      "suppressReason": "DEDUP_FINGERPRINT",
+      "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+      "createdAt": "2026-10-24T08:24:26.566Z",
+      "titleHasDedupLabel": true,
+      "messageHasCrossBelow": true,
+      "messageHasPrevClose1720": true
+    },
+    {
+      "id": "cmvm4sxf900276e6z04mp1s3i",
+      "suppressed": true,
+      "suppressReason": "DEDUP_FINGERPRINT",
+      "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+      "createdAt": "2026-10-24T08:23:06.549Z",
+      "titleHasDedupLabel": true,
+      "messageHasCrossBelow": true,
+      "messageHasPrevClose1720": true
+    }
+  ],
+  "recentExecSample": [
+    {
+      "id": "cmvm4wcx3002h6e6zgd2y6o0e",
+      "outcome": "SKIPPED",
+      "skipReason": "DEDUP",
+      "triggered": true,
+      "createdAt": "2026-10-24T08:25:46.599Z"
+    },
+    {
+      "id": "cmvm4un63002d6e6zqr84gbqc",
+      "outcome": "SKIPPED",
+      "skipReason": "DEDUP",
+      "triggered": true,
+      "createdAt": "2026-10-24T08:24:26.571Z"
+    },
+    {
+      "id": "cmvm4sxfc00296e6zujwi568l",
+      "outcome": "SKIPPED",
+      "skipReason": "DEDUP",
+      "triggered": true,
+      "createdAt": "2026-10-24T08:23:06.553Z"
+    }
+  ],
+  "dataDisclaimerPresent": true,
+  "dataDisclaimerIncludesSIMULATED": true
+}

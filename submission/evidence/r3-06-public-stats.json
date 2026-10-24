@@ -1,0 +1,266 @@
+{
+  "snapshotAtUtc": "2026-10-24T08:26:37.819Z",
+  "url": "https://signalwatch-sfkf.onrender.com/api/stats",
+  "httpStatus": 200,
+  "body": {
+    "taskCount": 1,
+    "activeCount": 1,
+    "pausedCount": 0,
+    "degradedCount": 0,
+    "alertCount": 1,
+    "execCount": 28,
+    "recentAlerts": [
+      {
+        "id": "cmvm4wcwz002f6e6zckgik1ky",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "title": "[去重抑制] 贵州茅台 · 贵州茅台 价格 跌破 1700",
+        "message": "与已有预警 cmvm41kzp00036e6zfkwuel84 指纹相同，已抑制。判定说明：贵州茅台 现价 1650 cross_below 1700（前收 1720）→ 满足",
+        "severity": "info",
+        "suppressed": true,
+        "suppressReason": "DEDUP_FINGERPRINT",
+        "createdAt": "2026-10-24T08:25:46.595Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4un5y002b6e6z84kkreey",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "title": "[去重抑制] 贵州茅台 · 贵州茅台 价格 跌破 1700",
+        "message": "与已有预警 cmvm41kzp00036e6zfkwuel84 指纹相同，已抑制。判定说明：贵州茅台 现价 1650 cross_below 1700（前收 1720）→ 满足",
+        "severity": "info",
+        "suppressed": true,
+        "suppressReason": "DEDUP_FINGERPRINT",
+        "createdAt": "2026-10-24T08:24:26.566Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4sxf900276e6z04mp1s3i",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "title": "[去重抑制] 贵州茅台 · 贵州茅台 价格 跌破 1700",
+        "message": "与已有预警 cmvm41kzp00036e6zfkwuel84 指纹相同，已抑制。判定说明：贵州茅台 现价 1650 cross_below 1700（前收 1720）→ 满足",
+        "severity": "info",
+        "suppressed": true,
+        "suppressReason": "DEDUP_FINGERPRINT",
+        "createdAt": "2026-10-24T08:23:06.549Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4r7ou00236e6zjew8exxf",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "title": "[去重抑制] 贵州茅台 · 贵州茅台 价格 跌破 1700",
+        "message": "与已有预警 cmvm41kzp00036e6zfkwuel84 指纹相同，已抑制。判定说明：贵州茅台 现价 1650 cross_below 1700（前收 1720）→ 满足",
+        "severity": "info",
+        "suppressed": true,
+        "suppressReason": "DEDUP_FINGERPRINT",
+        "createdAt": "2026-10-24T08:21:46.543Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4phy9001z6e6zyp6ozaha",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "title": "[去重抑制] 贵州茅台 · 贵州茅台 价格 跌破 1700",
+        "message": "与已有预警 cmvm41kzp00036e6zfkwuel84 指纹相同，已抑制。判定说明：贵州茅台 现价 1650 cross_below 1700（前收 1720）→ 满足",
+        "severity": "info",
+        "suppressed": true,
+        "suppressReason": "DEDUP_FINGERPRINT",
+        "createdAt": "2026-10-24T08:20:26.529Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4ns7r001v6e6z7kuk0enw",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "title": "[去重抑制] 贵州茅台 · 贵州茅台 价格 跌破 1700",
+        "message": "与已有预警 cmvm41kzp00036e6zfkwuel84 指纹相同，已抑制。判定说明：贵州茅台 现价 1650 cross_below 1700（前收 1720）→ 满足",
+        "severity": "info",
+        "suppressed": true,
+        "suppressReason": "DEDUP_FINGERPRINT",
+        "createdAt": "2026-10-24T08:19:06.519Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4mcuj001r6e6zb8kvtvvg",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "title": "[去重抑制] 贵州茅台 · 贵州茅台 价格 跌破 1700",
+        "message": "与已有预警 cmvm41kzp00036e6zfkwuel84 指纹相同，已抑制。判定说明：贵州茅台 现价 1650 cross_below 1700（前收 1720）→ 满足",
+        "severity": "info",
+        "suppressed": true,
+        "suppressReason": "DEDUP_FINGERPRINT",
+        "createdAt": "2026-10-24T08:17:59.947Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4letr001n6e6z4yx7s3kp",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "title": "[去重抑制] 贵州茅台 · 贵州茅台 价格 跌破 1700",
+        "message": "与已有预警 cmvm41kzp00036e6zfkwuel84 指纹相同，已抑制。判定说明：贵州茅台 现价 1650 cross_below 1700（前收 1720）→ 满足",
+        "severity": "info",
+        "suppressed": true,
+        "suppressReason": "DEDUP_FINGERPRINT",
+        "createdAt": "2026-10-24T08:17:15.856Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      }
+    ],
+    "recentExecs": [
+      {
+        "id": "cmvm4wcx3002h6e6zgd2y6o0e",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "outcome": "SKIPPED",
+        "triggered": true,
+        "explanation": "触发条件满足，但指纹去重抑制：f8d55d1d9f2bbd8e5005c196（关联预警 cmvm41kzp00036e6zfkwuel84）",
+        "marketSnapshot": "{\"quotes\":{\"300750\":{\"symbol\":\"300750\",\"name\":\"宁德时代\",\"price\":199.13,\"prevClose\":198.5,\"changePct\":0.32,\"heat\":84,\"volume\":1044000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"399006\":{\"symbol\":\"399006\",\"name\":\"创业板指\",\"price\":2089.28,\"prevClose\":2080,\"changePct\":0.45,\"heat\":43,\"volume\":1049000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600036\":{\"symbol\":\"600036\",\"name\":\"招商银行\",\"price\":37,\"prevClose\":36.8,\"changePct\":0.54,\"heat\":55,\"volume\":1054000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600519\":{\"symbol\":\"600519\",\"name\":\"贵州茅台\",\"price\":1650,\"prevClose\":1720,\"changePct\":-4.07,\"heat\":69,\"volume\":1059000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"601318\":{\"symbol\":\"601318\",\"name\":\"中国平安\",\"price\":48.89,\"prevClose\":48.6,\"changePct\":0.6,\"heat\":56,\"volume\":1064000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"002594\":{\"symbol\":\"002594\",\"name\":\"比亚迪\",\"price\":269.66,\"prevClose\":268.2,\"changePct\":0.54,\"heat\":81,\"volume\":1069000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000300\":{\"symbol\":\"000300\",\"name\":\"沪深300\",\"price\":3937.95,\"prevClose\":3920,\"changePct\":0.46,\"heat\":44,\"volume\":1074000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000001\":{\"symbol\":\"000001\",\"name\":\"上证指数\",\"price\":3130.55,\"prevClose\":3120,\"changePct\":0.34,\"heat\":35,\"volume\":1079000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"HSTECH\":{\"symbol\":\"HSTECH\",\"name\":\"恒生科技\",\"price\":4288.48,\"prevClose\":4280,\"changePct\":0.2,\"heat\":54,\"volume\":1084000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"00700\":{\"symbol\":\"00700\",\"name\":\"腾讯控股\",\"price\":380.2,\"prevClose\":380,\"changePct\":0.05,\"heat\":66,\"volume\":1089000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"09988\":{\"symbol\":\"09988\",\"name\":\"阿里巴巴\",\"price\":87.93,\"prevClose\":88,\"changePct\":-0.08,\"heat\":65,\"volume\":1094000,\"asOf\":\"2026-10-24T08:25:46.592Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60}},\"observed\":{\"symbol\":\"600519\",\"price\":1650,\"prevClose\":1720,\"threshold\":1700,\"source\":\"SIMULATED\",\"asOf\":\"2026-10-24T08:25:46.592Z\"},\"disclaimer\":\"当前行情/事件/日历均为 SIMULATED 模拟数据，非实时行情，仅供规则引擎与产品流程演示，关键数字可追溯至本模块生成逻辑。\"}",
+        "skipReason": "DEDUP",
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "durationMs": 32,
+        "createdAt": "2026-10-24T08:25:46.599Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4un63002d6e6zqr84gbqc",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "outcome": "SKIPPED",
+        "triggered": true,
+        "explanation": "触发条件满足，但指纹去重抑制：f8d55d1d9f2bbd8e5005c196（关联预警 cmvm41kzp00036e6zfkwuel84）",
+        "marketSnapshot": "{\"quotes\":{\"300750\":{\"symbol\":\"300750\",\"name\":\"宁德时代\",\"price\":198.84,\"prevClose\":198.5,\"changePct\":0.17,\"heat\":85,\"volume\":1043000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"399006\":{\"symbol\":\"399006\",\"name\":\"创业板指\",\"price\":2086.65,\"prevClose\":2080,\"changePct\":0.32,\"heat\":44,\"volume\":1048000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600036\":{\"symbol\":\"600036\",\"name\":\"招商银行\",\"price\":36.96,\"prevClose\":36.8,\"changePct\":0.43,\"heat\":55,\"volume\":1053000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600519\":{\"symbol\":\"600519\",\"name\":\"贵州茅台\",\"price\":1650,\"prevClose\":1720,\"changePct\":-4.07,\"heat\":68,\"volume\":1058000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"601318\":{\"symbol\":\"601318\",\"name\":\"中国平安\",\"price\":48.89,\"prevClose\":48.6,\"changePct\":0.6,\"heat\":55,\"volume\":1063000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"002594\":{\"symbol\":\"002594\",\"name\":\"比亚迪\",\"price\":269.78,\"prevClose\":268.2,\"changePct\":0.59,\"heat\":80,\"volume\":1068000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000300\":{\"symbol\":\"000300\",\"name\":\"沪深300\",\"price\":3941.37,\"prevClose\":3920,\"changePct\":0.55,\"heat\":44,\"volume\":1073000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000001\":{\"symbol\":\"000001\",\"name\":\"上证指数\",\"price\":3134.29,\"prevClose\":3120,\"changePct\":0.46,\"heat\":36,\"volume\":1078000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"HSTECH\":{\"symbol\":\"HSTECH\",\"name\":\"恒生科技\",\"price\":4294.47,\"prevClose\":4280,\"changePct\":0.34,\"heat\":54,\"volume\":1083000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"00700\":{\"symbol\":\"00700\",\"name\":\"腾讯控股\",\"price\":380.75,\"prevClose\":380,\"changePct\":0.2,\"heat\":65,\"volume\":1088000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"09988\":{\"symbol\":\"09988\",\"name\":\"阿里巴巴\",\"price\":88.05,\"prevClose\":88,\"changePct\":0.06,\"heat\":64,\"volume\":1093000,\"asOf\":\"2026-10-24T08:24:26.562Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60}},\"observed\":{\"symbol\":\"600519\",\"price\":1650,\"prevClose\":1720,\"threshold\":1700,\"source\":\"SIMULATED\",\"asOf\":\"2026-10-24T08:24:26.562Z\"},\"disclaimer\":\"当前行情/事件/日历均为 SIMULATED 模拟数据，非实时行情，仅供规则引擎与产品流程演示，关键数字可追溯至本模块生成逻辑。\"}",
+        "skipReason": "DEDUP",
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "durationMs": 12,
+        "createdAt": "2026-10-24T08:24:26.571Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4sxfc00296e6zujwi568l",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "outcome": "SKIPPED",
+        "triggered": true,
+        "explanation": "触发条件满足，但指纹去重抑制：f8d55d1d9f2bbd8e5005c196（关联预警 cmvm41kzp00036e6zfkwuel84）",
+        "marketSnapshot": "{\"quotes\":{\"300750\":{\"symbol\":\"300750\",\"name\":\"宁德时代\",\"price\":198.53,\"prevClose\":198.5,\"changePct\":0.02,\"heat\":85,\"volume\":1042000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"399006\":{\"symbol\":\"399006\",\"name\":\"创业板指\",\"price\":2083.56,\"prevClose\":2080,\"changePct\":0.17,\"heat\":45,\"volume\":1047000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600036\":{\"symbol\":\"600036\",\"name\":\"招商银行\",\"price\":36.92,\"prevClose\":36.8,\"changePct\":0.33,\"heat\":56,\"volume\":1052000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600519\":{\"symbol\":\"600519\",\"name\":\"贵州茅台\",\"price\":1650,\"prevClose\":1720,\"changePct\":-4.07,\"heat\":67,\"volume\":1057000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"601318\":{\"symbol\":\"601318\",\"name\":\"中国平安\",\"price\":48.86,\"prevClose\":48.6,\"changePct\":0.53,\"heat\":54,\"volume\":1062000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"002594\":{\"symbol\":\"002594\",\"name\":\"比亚迪\",\"price\":269.78,\"prevClose\":268.2,\"changePct\":0.59,\"heat\":80,\"volume\":1067000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000300\":{\"symbol\":\"000300\",\"name\":\"沪深300\",\"price\":3943.14,\"prevClose\":3920,\"changePct\":0.59,\"heat\":45,\"volume\":1072000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000001\":{\"symbol\":\"000001\",\"name\":\"上证指数\",\"price\":3137.01,\"prevClose\":3120,\"changePct\":0.55,\"heat\":37,\"volume\":1077000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"HSTECH\":{\"symbol\":\"HSTECH\",\"name\":\"恒生科技\",\"price\":4299.6,\"prevClose\":4280,\"changePct\":0.46,\"heat\":55,\"volume\":1082000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"00700\":{\"symbol\":\"00700\",\"name\":\"腾讯控股\",\"price\":381.28,\"prevClose\":380,\"changePct\":0.34,\"heat\":65,\"volume\":1087000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"09988\":{\"symbol\":\"09988\",\"name\":\"阿里巴巴\",\"price\":88.17,\"prevClose\":88,\"changePct\":0.19,\"heat\":63,\"volume\":1092000,\"asOf\":\"2026-10-24T08:23:06.547Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60}},\"observed\":{\"symbol\":\"600519\",\"price\":1650,\"prevClose\":1720,\"threshold\":1700,\"source\":\"SIMULATED\",\"asOf\":\"2026-10-24T08:23:06.547Z\"},\"disclaimer\":\"当前行情/事件/日历均为 SIMULATED 模拟数据，非实时行情，仅供规则引擎与产品流程演示，关键数字可追溯至本模块生成逻辑。\"}",
+        "skipReason": "DEDUP",
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "durationMs": 7,
+        "createdAt": "2026-10-24T08:23:06.553Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4r7oy00256e6zuk04r3ov",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "outcome": "SKIPPED",
+        "triggered": true,
+        "explanation": "触发条件满足，但指纹去重抑制：f8d55d1d9f2bbd8e5005c196（关联预警 cmvm41kzp00036e6zfkwuel84）",
+        "marketSnapshot": "{\"quotes\":{\"300750\":{\"symbol\":\"300750\",\"name\":\"宁德时代\",\"price\":198.24,\"prevClose\":198.5,\"changePct\":-0.13,\"heat\":86,\"volume\":1041000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"399006\":{\"symbol\":\"399006\",\"name\":\"创业板指\",\"price\":2080.34,\"prevClose\":2080,\"changePct\":0.02,\"heat\":46,\"volume\":1046000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600036\":{\"symbol\":\"600036\",\"name\":\"招商银行\",\"price\":36.86,\"prevClose\":36.8,\"changePct\":0.16,\"heat\":57,\"volume\":1051000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600519\":{\"symbol\":\"600519\",\"name\":\"贵州茅台\",\"price\":1650,\"prevClose\":1720,\"changePct\":-4.07,\"heat\":67,\"volume\":1056000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"601318\":{\"symbol\":\"601318\",\"name\":\"中国平安\",\"price\":48.82,\"prevClose\":48.6,\"changePct\":0.45,\"heat\":53,\"volume\":1061000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"002594\":{\"symbol\":\"002594\",\"name\":\"比亚迪\",\"price\":269.64,\"prevClose\":268.2,\"changePct\":0.54,\"heat\":79,\"volume\":1066000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000300\":{\"symbol\":\"000300\",\"name\":\"沪深300\",\"price\":3943.06,\"prevClose\":3920,\"changePct\":0.59,\"heat\":45,\"volume\":1071000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000001\":{\"symbol\":\"000001\",\"name\":\"上证指数\",\"price\":3138.42,\"prevClose\":3120,\"changePct\":0.59,\"heat\":37,\"volume\":1076000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"HSTECH\":{\"symbol\":\"HSTECH\",\"name\":\"恒生科技\",\"price\":4303.34,\"prevClose\":4280,\"changePct\":0.55,\"heat\":56,\"volume\":1081000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"00700\":{\"symbol\":\"00700\",\"name\":\"腾讯控股\",\"price\":381.74,\"prevClose\":380,\"changePct\":0.46,\"heat\":65,\"volume\":1086000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"09988\":{\"symbol\":\"09988\",\"name\":\"阿里巴巴\",\"price\":88.3,\"prevClose\":88,\"changePct\":0.34,\"heat\":62,\"volume\":1091000,\"asOf\":\"2026-10-24T08:21:46.537Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60}},\"observed\":{\"symbol\":\"600519\",\"price\":1650,\"prevClose\":1720,\"threshold\":1700,\"source\":\"SIMULATED\",\"asOf\":\"2026-10-24T08:21:46.537Z\"},\"disclaimer\":\"当前行情/事件/日历均为 SIMULATED 模拟数据，非实时行情，仅供规则引擎与产品流程演示，关键数字可追溯至本模块生成逻辑。\"}",
+        "skipReason": "DEDUP",
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "durationMs": 11,
+        "createdAt": "2026-10-24T08:21:46.546Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4phyd00216e6zlf8t2oz5",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "outcome": "SKIPPED",
+        "triggered": true,
+        "explanation": "触发条件满足，但指纹去重抑制：f8d55d1d9f2bbd8e5005c196（关联预警 cmvm41kzp00036e6zfkwuel84）",
+        "marketSnapshot": "{\"quotes\":{\"300750\":{\"symbol\":\"300750\",\"name\":\"宁德时代\",\"price\":197.99,\"prevClose\":198.5,\"changePct\":-0.26,\"heat\":86,\"volume\":1040000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"399006\":{\"symbol\":\"399006\",\"name\":\"创业板指\",\"price\":2077.27,\"prevClose\":2080,\"changePct\":-0.13,\"heat\":47,\"volume\":1045000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600036\":{\"symbol\":\"600036\",\"name\":\"招商银行\",\"price\":36.81,\"prevClose\":36.8,\"changePct\":0.03,\"heat\":57,\"volume\":1050000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600519\":{\"symbol\":\"600519\",\"name\":\"贵州茅台\",\"price\":1650,\"prevClose\":1720,\"changePct\":-4.07,\"heat\":67,\"volume\":1055000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"601318\":{\"symbol\":\"601318\",\"name\":\"中国平安\",\"price\":48.76,\"prevClose\":48.6,\"changePct\":0.33,\"heat\":52,\"volume\":1060000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"002594\":{\"symbol\":\"002594\",\"name\":\"比亚迪\",\"price\":269.4,\"prevClose\":268.2,\"changePct\":0.45,\"heat\":78,\"volume\":1065000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000300\":{\"symbol\":\"000300\",\"name\":\"沪深300\",\"price\":3941.12,\"prevClose\":3920,\"changePct\":0.54,\"heat\":45,\"volume\":1070000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000001\":{\"symbol\":\"000001\",\"name\":\"上证指数\",\"price\":3138.35,\"prevClose\":3120,\"changePct\":0.59,\"heat\":38,\"volume\":1075000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"HSTECH\":{\"symbol\":\"HSTECH\",\"name\":\"恒生科技\",\"price\":4305.27,\"prevClose\":4280,\"changePct\":0.59,\"heat\":57,\"volume\":1080000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"00700\":{\"symbol\":\"00700\",\"name\":\"腾讯控股\",\"price\":382.07,\"prevClose\":380,\"changePct\":0.54,\"heat\":65,\"volume\":1085000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"09988\":{\"symbol\":\"09988\",\"name\":\"阿里巴巴\",\"price\":88.4,\"prevClose\":88,\"changePct\":0.45,\"heat\":61,\"volume\":1090000,\"asOf\":\"2026-10-24T08:20:26.527Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60}},\"observed\":{\"symbol\":\"600519\",\"price\":1650,\"prevClose\":1720,\"threshold\":1700,\"source\":\"SIMULATED\",\"asOf\":\"2026-10-24T08:20:26.527Z\"},\"disclaimer\":\"当前行情/事件/日历均为 SIMULATED 模拟数据，非实时行情，仅供规则引擎与产品流程演示，关键数字可追溯至本模块生成逻辑。\"}",
+        "skipReason": "DEDUP",
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "durationMs": 9,
+        "createdAt": "2026-10-24T08:20:26.534Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4ns7u001x6e6z03w2rnwb",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "outcome": "SKIPPED",
+        "triggered": true,
+        "explanation": "触发条件满足，但指纹去重抑制：f8d55d1d9f2bbd8e5005c196（关联预警 cmvm41kzp00036e6zfkwuel84）",
+        "marketSnapshot": "{\"quotes\":{\"300750\":{\"symbol\":\"300750\",\"name\":\"宁德时代\",\"price\":197.81,\"prevClose\":198.5,\"changePct\":-0.35,\"heat\":86,\"volume\":1039000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"399006\":{\"symbol\":\"399006\",\"name\":\"创业板指\",\"price\":2074.66,\"prevClose\":2080,\"changePct\":-0.26,\"heat\":48,\"volume\":1044000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600036\":{\"symbol\":\"600036\",\"name\":\"招商银行\",\"price\":36.75,\"prevClose\":36.8,\"changePct\":-0.14,\"heat\":58,\"volume\":1049000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600519\":{\"symbol\":\"600519\",\"name\":\"贵州茅台\",\"price\":1650,\"prevClose\":1720,\"changePct\":-4.07,\"heat\":67,\"volume\":1054000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"601318\":{\"symbol\":\"601318\",\"name\":\"中国平安\",\"price\":48.68,\"prevClose\":48.6,\"changePct\":0.16,\"heat\":52,\"volume\":1059000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"002594\":{\"symbol\":\"002594\",\"name\":\"比亚迪\",\"price\":269.06,\"prevClose\":268.2,\"changePct\":0.32,\"heat\":77,\"volume\":1064000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000300\":{\"symbol\":\"000300\",\"name\":\"沪深300\",\"price\":3937.49,\"prevClose\":3920,\"changePct\":0.45,\"heat\":45,\"volume\":1069000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000001\":{\"symbol\":\"000001\",\"name\":\"上证指数\",\"price\":3136.81,\"prevClose\":3120,\"changePct\":0.54,\"heat\":39,\"volume\":1074000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"HSTECH\":{\"symbol\":\"HSTECH\",\"name\":\"恒生科技\",\"price\":4305.18,\"prevClose\":4280,\"changePct\":0.59,\"heat\":58,\"volume\":1079000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"00700\":{\"symbol\":\"00700\",\"name\":\"腾讯控股\",\"price\":382.24,\"prevClose\":380,\"changePct\":0.59,\"heat\":66,\"volume\":1084000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"09988\":{\"symbol\":\"09988\",\"name\":\"阿里巴巴\",\"price\":88.48,\"prevClose\":88,\"changePct\":0.55,\"heat\":61,\"volume\":1089000,\"asOf\":\"2026-10-24T08:19:06.516Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60}},\"observed\":{\"symbol\":\"600519\",\"price\":1650,\"prevClose\":1720,\"threshold\":1700,\"source\":\"SIMULATED\",\"asOf\":\"2026-10-24T08:19:06.516Z\"},\"disclaimer\":\"当前行情/事件/日历均为 SIMULATED 模拟数据，非实时行情，仅供规则引擎与产品流程演示，关键数字可追溯至本模块生成逻辑。\"}",
+        "skipReason": "DEDUP",
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "durationMs": 11,
+        "createdAt": "2026-10-24T08:19:06.523Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4mcul001t6e6zaheqe8jq",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "outcome": "SKIPPED",
+        "triggered": true,
+        "explanation": "触发条件满足，但指纹去重抑制：f8d55d1d9f2bbd8e5005c196（关联预警 cmvm41kzp00036e6zfkwuel84）",
+        "marketSnapshot": "{\"quotes\":{\"300750\":{\"symbol\":\"300750\",\"name\":\"宁德时代\",\"price\":197.71,\"prevClose\":198.5,\"changePct\":-0.4,\"heat\":86,\"volume\":1038000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"399006\":{\"symbol\":\"399006\",\"name\":\"创业板指\",\"price\":2072.75,\"prevClose\":2080,\"changePct\":-0.35,\"heat\":49,\"volume\":1043000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600036\":{\"symbol\":\"600036\",\"name\":\"招商银行\",\"price\":36.71,\"prevClose\":36.8,\"changePct\":-0.24,\"heat\":59,\"volume\":1048000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600519\":{\"symbol\":\"600519\",\"name\":\"贵州茅台\",\"price\":1650,\"prevClose\":1720,\"changePct\":-4.07,\"heat\":67,\"volume\":1053000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"601318\":{\"symbol\":\"601318\",\"name\":\"中国平安\",\"price\":48.61,\"prevClose\":48.6,\"changePct\":0.02,\"heat\":51,\"volume\":1058000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"002594\":{\"symbol\":\"002594\",\"name\":\"比亚迪\",\"price\":268.66,\"prevClose\":268.2,\"changePct\":0.17,\"heat\":76,\"volume\":1063000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000300\":{\"symbol\":\"000300\",\"name\":\"沪深300\",\"price\":3932.52,\"prevClose\":3920,\"changePct\":0.32,\"heat\":44,\"volume\":1068000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000001\":{\"symbol\":\"000001\",\"name\":\"上证指数\",\"price\":3133.92,\"prevClose\":3120,\"changePct\":0.45,\"heat\":39,\"volume\":1073000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"HSTECH\":{\"symbol\":\"HSTECH\",\"name\":\"恒生科技\",\"price\":4303.05,\"prevClose\":4280,\"changePct\":0.54,\"heat\":59,\"volume\":1078000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"00700\":{\"symbol\":\"00700\",\"name\":\"腾讯控股\",\"price\":382.24,\"prevClose\":380,\"changePct\":0.59,\"heat\":66,\"volume\":1083000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"09988\":{\"symbol\":\"09988\",\"name\":\"阿里巴巴\",\"price\":88.52,\"prevClose\":88,\"changePct\":0.59,\"heat\":60,\"volume\":1088000,\"asOf\":\"2026-10-24T08:17:59.945Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60}},\"observed\":{\"symbol\":\"600519\",\"price\":1650,\"prevClose\":1720,\"threshold\":1700,\"source\":\"SIMULATED\",\"asOf\":\"2026-10-24T08:17:59.945Z\"},\"disclaimer\":\"当前行情/事件/日历均为 SIMULATED 模拟数据，非实时行情，仅供规则引擎与产品流程演示，关键数字可追溯至本模块生成逻辑。\"}",
+        "skipReason": "DEDUP",
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "durationMs": 8,
+        "createdAt": "2026-10-24T08:17:59.950Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      },
+      {
+        "id": "cmvm4letu001p6e6zbal0aqsv",
+        "taskId": "cmvm385gn0000dlutdsw90nzx",
+        "ruleVersion": 1,
+        "outcome": "SKIPPED",
+        "triggered": true,
+        "explanation": "触发条件满足，但指纹去重抑制：f8d55d1d9f2bbd8e5005c196（关联预警 cmvm41kzp00036e6zfkwuel84）",
+        "marketSnapshot": "{\"quotes\":{\"300750\":{\"symbol\":\"300750\",\"name\":\"宁德时代\",\"price\":197.69,\"prevClose\":198.5,\"changePct\":-0.41,\"heat\":85,\"volume\":1037000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"399006\":{\"symbol\":\"399006\",\"name\":\"创业板指\",\"price\":2071.69,\"prevClose\":2080,\"changePct\":-0.4,\"heat\":49,\"volume\":1042000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600036\":{\"symbol\":\"600036\",\"name\":\"招商银行\",\"price\":36.67,\"prevClose\":36.8,\"changePct\":-0.35,\"heat\":60,\"volume\":1047000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"600519\":{\"symbol\":\"600519\",\"name\":\"贵州茅台\",\"price\":1650,\"prevClose\":1720,\"changePct\":-4.07,\"heat\":68,\"volume\":1052000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"601318\":{\"symbol\":\"601318\",\"name\":\"中国平安\",\"price\":48.54,\"prevClose\":48.6,\"changePct\":-0.12,\"heat\":50,\"volume\":1057000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"002594\":{\"symbol\":\"002594\",\"name\":\"比亚迪\",\"price\":268.24,\"prevClose\":268.2,\"changePct\":0.01,\"heat\":75,\"volume\":1062000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000300\":{\"symbol\":\"000300\",\"name\":\"沪深300\",\"price\":3926.72,\"prevClose\":3920,\"changePct\":0.17,\"heat\":44,\"volume\":1067000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"000001\":{\"symbol\":\"000001\",\"name\":\"上证指数\",\"price\":3129.97,\"prevClose\":3120,\"changePct\":0.32,\"heat\":40,\"volume\":1072000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"HSTECH\":{\"symbol\":\"HSTECH\",\"name\":\"恒生科技\",\"price\":4299.09,\"prevClose\":4280,\"changePct\":0.45,\"heat\":60,\"volume\":1077000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"00700\":{\"symbol\":\"00700\",\"name\":\"腾讯控股\",\"price\":382.05,\"prevClose\":380,\"changePct\":0.54,\"heat\":67,\"volume\":1082000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60},\"09988\":{\"symbol\":\"09988\",\"name\":\"阿里巴巴\",\"price\":88.52,\"prevClose\":88,\"changePct\":0.59,\"heat\":60,\"volume\":1087000,\"asOf\":\"2026-10-24T08:17:15.853Z\",\"source\":\"SIMULATED\",\"stale\":false,\"freshnessSec\":60}},\"observed\":{\"symbol\":\"600519\",\"price\":1650,\"prevClose\":1720,\"threshold\":1700,\"source\":\"SIMULATED\",\"asOf\":\"2026-10-24T08:17:15.853Z\"},\"disclaimer\":\"当前行情/事件/日历均为 SIMULATED 模拟数据，非实时行情，仅供规则引擎与产品流程演示，关键数字可追溯至本模块生成逻辑。\"}",
+        "skipReason": "DEDUP",
+        "fingerprint": "f8d55d1d9f2bbd8e5005c196",
+        "durationMs": 8,
+        "createdAt": "2026-10-24T08:17:15.859Z",
+        "task": {
+          "name": "贵州茅台 · 贵州茅台 价格 跌破 1700"
+        }
+      }
+    ],
+    "dataDisclaimer": "当前行情/事件/日历均为 SIMULATED 模拟数据，非实时行情，仅供规则引擎与产品流程演示，关键数字可追溯至本模块生成逻辑。"
+  }
+}

@@ -1,16 +1,10 @@
 # SignalWatch 演示录屏前人工检查清单
 
-按顺序点击。每一步都应看到右侧「正确结果」。
+按顺序点击。每一步都应看到右侧「正确结果」。  
+正式录屏推荐直接使用公网：https://signalwatch-sfkf.onrender.com  
+（本地可选：`npm run build && npm run start` → http://localhost:3000）
 
-## 启动
-
-```bash
-cd signalwatch
-npm run build
-npm run start
-```
-
-打开：http://localhost:3000
+详细口播与时间轴见 `docs/VIDEO_SCRIPT.md`。
 
 ---
 

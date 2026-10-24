@@ -101,7 +101,16 @@ Render 会注入 `PORT`。首次启动会自动执行 PostgreSQL `prisma migrate
 3. 部署时 `start:render` 会执行 `prisma migrate deploy --schema=prisma-postgres/schema.prisma`。
 4. 表：Task / RuleVersion / ExecutionLog / Alert / SystemMeta。
 
-**尚未拿到真实连接串前，无法在本机对云库做连通性测试。**
+### 当前已部署实例（正式演示）
+
+| 项 | 值 |
+|----|-----|
+| Web | https://signalwatch-sfkf.onrender.com |
+| Health | https://signalwatch-sfkf.onrender.com/api/health |
+| 数据库 | Render PostgreSQL（Blueprint 注入 `DATABASE_URL`，**勿写入仓库**） |
+| 业务代码基准 | `233d09d715deb06c5a2ec70b7141f107a741ea16` |
+
+公网连通性以健康检查与 `/api/stats` 快照为准（见 `submission/evidence/r3-05` / `r3-06`）。本机无需也不应提交真实连接串。
 
 ### Blueprint
 
@@ -116,6 +125,7 @@ Render 会注入 `PORT`。首次启动会自动执行 PostgreSQL `prisma migrate
 | Free Web Service | 约 **15 分钟无流量后休眠**；下次访问需约 1 分钟冷启动；本地文件系统不持久 |
 | Free PostgreSQL | 约 **30 天后到期**；到期后有约 14 天宽限期，未升级将被删除；容量约 1 GB；每个 workspace **仅 1 个**免费库 |
 | 共用额度 | 每月有免费实例小时 / 出站带宽 / 构建分钟上限（见 Render Billing） |
+| 进程内调度 | 实例休眠期间**不能保证**持续执行；公开演示环境非生产级多用户隔离 |
 
 演示考核可接受休眠与冷启动；长期演示建议升级或定期续期数据库。
 
@@ -134,15 +144,13 @@ Render 会注入 `PORT`。首次启动会自动执行 PostgreSQL `prisma migrate
 | 层级 | 状态 |
 |------|------|
 | 调度 API | 已实现 |
-| Render 单实例 `ENABLE_SERVER_SCHEDULER=1` | 可启用 |
-| 外部 cron + SECRET | 可另行配置 |
+| Render 单实例 `ENABLE_SERVER_SCHEDULER=1` | 当前演示已启用（休眠时中断） |
+| 外部 cron + SECRET | 可另行配置；本演示**未单独启用**外部 cron |
 | 多实例分布式锁 | 未实现（免费单实例足够演示） |
 
 ---
 
-## 生产构建（本地无 Postgres 时）
-
-使用本地 SQLite URL 即可验证 Next 构建：
+## 生产构建（本地 SQLite）
 
 ```bash
 # .env 保持 file:./dev.db
@@ -152,4 +160,4 @@ npm run test
 npm run build
 ```
 
-这**不**等于云端 PostgreSQL 已验证。
+本地构建通过**不等于**替代公网健康检查；云端以 `/api/health` 为准。

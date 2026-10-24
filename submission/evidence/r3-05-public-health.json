@@ -1,0 +1,13 @@
+{
+  "snapshotAtUtc": "2026-10-24T08:26:37.819Z",
+  "url": "https://signalwatch-sfkf.onrender.com/api/health",
+  "httpStatus": 200,
+  "body": {
+    "ok": true,
+    "service": "signalwatch",
+    "db": "up",
+    "dataMode": "SIMULATED",
+    "latencyMs": 64,
+    "ts": "2026-10-24T08:26:39.346Z"
+  }
+}

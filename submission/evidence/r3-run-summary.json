@@ -1,0 +1,15 @@
+{
+  "generatedAtUtc": "2026-10-24T08:26:37.819Z",
+  "gitCommitExpected": "233d09d715deb06c5a2ec70b7141f107a741ea16",
+  "localChecks": {
+    "vitest": "45 passed (from r3-01)",
+    "typecheck": 0,
+    "lint": 0,
+    "build": 0
+  },
+  "public": {
+    "health": "r3-05-public-health.json",
+    "statsFull": "r3-06-public-stats.json",
+    "statsSummary": "r3-06-public-stats.summary.json"
+  }
+}
