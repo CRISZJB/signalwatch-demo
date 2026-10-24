@@ -13,7 +13,7 @@
 
 ## 验证方式
 
-- 本地：`npm run test`（本轮 45）/ `typecheck` / `lint` / `build` → `submission/evidence/r3-*`
+- 本地：`npm run test`（本轮 45）/ `typecheck` / `lint` / `build` → `submission/evidence/r4-*`（真 UTF-8）
 - 公网只读：`/api/health`、`/api/stats` → `r3-05` / `r3-06`
 - 公网人工操作：用户 2026-10-24 验收（见 `submission/02`）
 

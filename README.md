@@ -99,8 +99,8 @@ npm run dev
 | [submission/提交清单.md](submission/提交清单.md) | 齐备度核对 |
 | [submission/evidence/](submission/evidence/) | 本轮真实命令日志与隔离库证据 |
 
-最终材料摘要（2026-10-24）：Vitest **45** 通过；业务用例文档 **30 = 29 通过 + 1 部分通过（C-05）**；公网已部署并可健康检查；去重可见 `DEDUP`。  
-**60–180 秒演示视频仍待用户录制**（脚本：`docs/VIDEO_SCRIPT.md`）。齐备度见 `submission/提交清单.md`。
+最终材料摘要（2026-10-25）：Vitest **45** 通过（`r4` 真 UTF-8 证据）；业务用例 **30 = 29 通过 + 1 部分通过（C-05）**；公网已部署；去重可见 `DEDUP`。  
+演示视频 **`SignalWatch_第一题演示.mkv`**（约 140 秒 / 16.16 MB）随正式提交 ZIP 提供，**不上传 GitHub**。齐备度见 `submission/提交清单.md`。
 
 ### 长期调度（不依赖浏览器）
 

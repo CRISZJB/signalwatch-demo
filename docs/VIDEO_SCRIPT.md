@@ -2,6 +2,8 @@
 
 正式公网地址：https://signalwatch-sfkf.onrender.com  
 
+**交付状态（2026-10-25）：** 成品为 `SignalWatch_第一题演示.mkv`（约 140 秒），随正式提交 ZIP 提供；保持 MKV，不转 MP4、不重编码；**不上传 GitHub**。
+
 录制只在浏览器中操作，**不要**打开终端或改代码。
 
 ---

@@ -1,0 +1,62 @@
+# SignalWatch evidence log (UTF-8)
+# startedAtUtc: 2026-10-24T19:12:37.351Z
+# endedAtUtc: 2026-10-24T19:13:26.959Z
+# command: npm run build
+# exitCode: 0
+
+> signalwatch@0.1.0 build
+> node scripts/prisma-env.mjs generate && next build
+
+[prisma-env] generate schema=C:\Users\Cris.Z\Desktop\同花顺\第一题\signalwatch\prisma\schema.prisma
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+
+✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 64ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want real-time updates to your database without manual polling? Discover how with Pulse: https://pris.ly/tip-0-pulse
+
+   ▲ Next.js 15.5.28
+   - Environments: .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.9s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/16) ...
+   Generating static pages (4/16) 
+   Generating static pages (8/16) 
+   Generating static pages (12/16) 
+ ✓ Generating static pages (16/16)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    1.83 kB         108 kB
+├ ○ /_not-found                            990 B         104 kB
+├ ○ /alerts                              1.04 kB         104 kB
+├ ƒ /api/alerts                            149 B         103 kB
+├ ƒ /api/health                            149 B         103 kB
+├ ƒ /api/market                            149 B         103 kB
+├ ƒ /api/parse                             149 B         103 kB
+├ ƒ /api/scheduler/tick                    149 B         103 kB
+├ ƒ /api/stats                             149 B         103 kB
+├ ƒ /api/tasks                             149 B         103 kB
+├ ƒ /api/tasks/[id]                        149 B         103 kB
+├ ƒ /api/tasks/[id]/pause                  149 B         103 kB
+├ ƒ /api/tasks/[id]/resume                 149 B         103 kB
+├ ƒ /api/tasks/[id]/run                    149 B         103 kB
+├ ○ /create                              1.88 kB         105 kB
+├ ○ /market                              1.82 kB         105 kB
+├ ○ /tasks                               1.31 kB         108 kB
+└ ƒ /tasks/[id]                          2.32 kB         109 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/255-b1e2483a7e02feee.js       46.6 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          1.99 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

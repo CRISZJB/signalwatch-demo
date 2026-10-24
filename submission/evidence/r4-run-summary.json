@@ -1,0 +1,80 @@
+{
+  "generatedAtUtc": "2026-10-24T19:11:43.689Z",
+  "note": "r4 genuine UTF-8 logs; r3 *.utf8.txt were UTF-16LE mislabeled",
+  "results": [
+    {
+      "exit": 0,
+      "outBase": "r4-01-vitest",
+      "bytes": 982,
+      "nulls": 0
+    },
+    {
+      "exit": 0,
+      "outBase": "r4-02-typecheck",
+      "bytes": 205,
+      "nulls": 0
+    },
+    {
+      "exit": 0,
+      "outBase": "r4-03-lint",
+      "bytes": 191,
+      "nulls": 0
+    },
+    {
+      "exit": 0,
+      "outBase": "r4-04-build",
+      "bytes": 2735,
+      "nulls": 0
+    }
+  ],
+  "checks": [
+    {
+      "file": "r4-01-vitest.utf8.txt",
+      "size": 982,
+      "nulls": 0,
+      "isUtf16le": false,
+      "startsWithHash": true,
+      "sample": "# SignalWatch evidence log (UTF-8)\\n# startedAtUtc: 2026-10-24T19:11:43.703Z\\n# en"
+    },
+    {
+      "file": "r4-02-typecheck.utf8.txt",
+      "size": 205,
+      "nulls": 0,
+      "isUtf16le": false,
+      "startsWithHash": true,
+      "sample": "# SignalWatch evidence log (UTF-8)\\n# startedAtUtc: 2026-10-24T19:11:52.408Z\\n# en"
+    },
+    {
+      "file": "r4-03-lint.utf8.txt",
+      "size": 191,
+      "nulls": 0,
+      "isUtf16le": false,
+      "startsWithHash": true,
+      "sample": "# SignalWatch evidence log (UTF-8)\\n# startedAtUtc: 2026-10-24T19:11:56.096Z\\n# en"
+    },
+    {
+      "file": "r4-04-build.utf8.txt",
+      "size": 2735,
+      "nulls": 0,
+      "isUtf16le": false,
+      "startsWithHash": true,
+      "sample": "# SignalWatch evidence log (UTF-8)\\n# startedAtUtc: 2026-10-24T19:12:37.351Z\\n# en"
+    },
+    {
+      "file": "r3-01-vitest.utf8.txt",
+      "size": 1201,
+      "nulls": 0,
+      "isUtf16le": false,
+      "startsWithHash": true,
+      "sample": "# REPAIRED: this file previously contained UTF-16LE bytes mislabeled as UTF-8 (s"
+    },
+    {
+      "file": "r3-04-build.utf8.txt",
+      "size": 2953,
+      "nulls": 0,
+      "isUtf16le": false,
+      "startsWithHash": true,
+      "sample": "# REPAIRED: this file previously contained UTF-16LE bytes mislabeled as UTF-8 (s"
+    }
+  ]
+}
