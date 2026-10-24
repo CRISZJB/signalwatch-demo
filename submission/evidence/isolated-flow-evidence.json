@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-10-24T06:33:28.480Z",
+  "isolatedDatabase": "file:C:/Users/Cris.Z/Desktop/同花顺/第一题/signalwatch/submission/evidence/isolated-submission.db",
+  "naturalLanguage": "贵州茅台跌破1700元提醒我",
+  "parse": {
+    "success": true,
+    "confidence": 0.65,
+    "threshold": 1700,
+    "comparator": "cross_below",
+    "symbol": "600519"
+  },
+  "triggerCase": {
+    "price": 1650,
+    "prevClose": 1720,
+    "threshold": 1700,
+    "asOf": "2026-10-24T06:33:28.411Z",
+    "source": "SIMULATED",
+    "result": {
+      "triggered": true,
+      "explanation": "贵州茅台 现价 1650 cross_below 1700（前收 1720）→ 满足",
+      "severity": "info",
+      "fingerprint": "f78adb3856edad67071c79c2",
+      "observed": {
+        "symbol": "600519",
+        "price": 1650,
+        "prevClose": 1720,
+        "threshold": 1700,
+        "source": "SIMULATED",
+        "asOf": "2026-10-24T06:33:28.411Z"
+      }
+    },
+    "executionLogId": "cmvm0vxp90003g2zrttp85i36",
+    "alertId": "cmvm0vxpg0005g2zrvk5itr8i"
+  },
+  "cooldownSkipLogId": "cmvm0vxpt0007g2zrvaxnsfxz",
+  "versionChange": {
+    "from": 1,
+    "to": 2,
+    "newThreshold": 1600,
+    "versions": [
+      {
+        "version": 1,
+        "changeNote": "隔离证据初始版本",
+        "id": "cmvm0vxp00001g2zrk3l9hyhw"
+      },
+      {
+        "version": 2,
+        "changeNote": "阈值改为1600（隔离证据）",
+        "id": "cmvm0vxpz0009g2zrfmawmiwx"
+      }
+    ]
+  },
+  "degradeCase": {
+    "fault": "timeout",
+    "result": {
+      "triggered": false,
+      "explanation": "数据接口超时，本轮降级为不触发，并记录异常以便恢复后继续监控",
+      "severity": "info",
+      "fingerprint": "degraded-timeout",
+      "observed": {},
+      "degraded": true,
+      "degradeReason": "行情接口超时"
+    },
+    "executionLogId": "cmvm0vxqc000bg2zrl2afq8qq"
+  },
+  "recoverCase": {
+    "price": 1688,
+    "threshold": 1600,
+    "result": {
+      "triggered": false,
+      "explanation": "贵州茅台 现价 1688，阈值 1600，比较符 cross_below → 未满足",
+      "severity": "info",
+      "fingerprint": "71f4d700f297f944ce8c832d",
+      "observed": {
+        "symbol": "600519",
+        "price": 1688,
+        "prevClose": 1688,
+        "threshold": 1600,
+        "source": "SIMULATED",
+        "asOf": "2026-10-24T06:33:28.465Z"
+      }
+    },
+    "executionLogId": "cmvm0vxqp000dg2zryfaoh8au",
+    "finalStatus": "ACTIVE"
+  },
+  "taskId": "cmvm0vxp00000g2zr0w7gxc8e",
+  "executionCount": 4,
+  "alertCount": 1
+}

@@ -1,0 +1,7 @@
+﻿{
+    "withSecret":  200,
+    "noSecretExpected":  401,
+    "generatedAt":  "2026-10-24T06:40:31.4131266Z",
+    "note":  "SchedulerPing depends on browser; ENABLE_SERVER_SCHEDULER and scheduler-worker do not. Online cron not configured.",
+    "workerOk":  true
+}

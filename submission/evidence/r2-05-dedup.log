@@ -1,0 +1,52 @@
+===== r2-05-dedup =====
+started: 2026-10-24T06:33:20.418Z
+finished: 2026-10-24T06:33:26.533Z
+command: node --import tsx scripts/dedup-evidence.mjs
+exitCode: 0
+----- stdout -----
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": SQLite database "isolated-dedup.db" at "file:C:/Users/Cris.Z/Desktop/同花顺/第一题/signalwatch/submission/evidence/isolated-dedup.db"
+
+SQLite database isolated-dedup.db created at file:C:/Users/Cris.Z/Desktop/同花顺/第一题/signalwatch/submission/evidence/isolated-dedup.db
+
+1 migration found in prisma/migrations
+
+Applying migration `20261024052648_init`
+
+The following migration(s) have been applied:
+
+migrations/
+  └─ 20261024052648_init/
+    └─ migration.sql
+      
+All migrations have been successfully applied.
+{
+  "generatedAt": "2026-10-24T06:33:26.498Z",
+  "isolatedDatabase": "file:C:/Users/Cris.Z/Desktop/同花顺/第一题/signalwatch/submission/evidence/isolated-dedup.db",
+  "note": "去重优先于冷却：第二次 skipReason 必须为 DEDUP，不能是 COOLDOWN",
+  "taskId": "cmvm0vw610000qbe7aprfkfzr",
+  "cooldownMinutes": 30,
+  "run1": {
+    "outcome": "TRIGGERED",
+    "skipReason": null,
+    "triggered": true,
+    "fingerprint": "5c6394f0c6d2b5ecbe517301",
+    "alertId": "cmvm0vw6t0003qbe78xjgoo3e",
+    "alertSuppressed": false
+  },
+  "run2": {
+    "outcome": "SKIPPED",
+    "skipReason": "DEDUP",
+    "triggered": true,
+    "fingerprint": "5c6394f0c6d2b5ecbe517301",
+    "alertId": "cmvm0vw7i0007qbe7ski27zrf",
+    "alertSuppressed": true,
+    "suppressReason": "DEDUP_FINGERPRINT"
+  },
+  "validAlertCount": 1,
+  "suppressedAlertCount": 1,
+  "pass": true
+}
+
+----- stderr -----

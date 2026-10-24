@@ -1,0 +1,19 @@
+
+===== 03-lint =====
+started: 2026-10-24T06:01:19.263Z
+command: npm run lint
+exitCode: 0
+----- stdout -----
+
+> signalwatch@0.1.0 lint
+> eslint .
+
+
+C:\Users\Cris.Z\Desktop\同花顺\第一题\signalwatch\scripts\isolated-evidence.mjs
+   6:36  warning  'existsSync' is defined but never used           @typescript-eslint/no-unused-vars
+  30:7   warning  'prismaPath' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+----- stderr -----

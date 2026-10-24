@@ -1,0 +1,6 @@
+﻿NO_SECRET status= body=
+WITH_SECRET status=200 body={"skipped":false,"reason":null,"results":[],"auth":"SECRET_OK"}
+WORKER {"at":"2026-10-24T06:40:03.939Z","status":200,"skipped":false,"reason":null,"resultCount":0,"auth":"SECRET_OK"}
+
+
+NO_SECRET_CHECK done

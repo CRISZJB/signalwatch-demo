@@ -1,0 +1,89 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/// 监控任务
+model Task {
+  id                 String   @id @default(cuid())
+  name               String
+  status             String   @default("ACTIVE") // ACTIVE | PAUSED | DEGRADED
+  naturalLanguage    String
+  cooldownMinutes    Int      @default(30)
+  scheduleIntervalSec Int     @default(60)
+  currentVersion     Int      @default(1)
+  lastRunAt          DateTime?
+  lastAlertAt        DateTime?
+  lastError          String?
+  degradedReason     String?
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  versions     RuleVersion[]
+  executions   ExecutionLog[]
+  alerts       Alert[]
+}
+
+/// 规则版本（每次修改规则递增）
+model RuleVersion {
+  id         String   @id @default(cuid())
+  taskId     String
+  version    Int
+  ruleJson   String
+  changeNote String?
+  createdAt  DateTime @default(now())
+
+  task Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@unique([taskId, version])
+  @@index([taskId])
+}
+
+/// 执行日志
+model ExecutionLog {
+  id            String   @id @default(cuid())
+  taskId        String
+  ruleVersion   Int
+  outcome       String   // TRIGGERED | NOT_TRIGGERED | SKIPPED | DEGRADED | ERROR
+  triggered     Boolean  @default(false)
+  explanation   String
+  marketSnapshot String?
+  skipReason    String?
+  fingerprint   String?
+  durationMs    Int      @default(0)
+  createdAt     DateTime @default(now())
+
+  task Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@index([taskId, createdAt])
+}
+
+/// 预警记录
+model Alert {
+  id          String   @id @default(cuid())
+  taskId      String
+  ruleVersion Int
+  fingerprint String
+  title       String
+  message     String
+  severity    String   @default("warning") // info | warning | critical
+  suppressed  Boolean  @default(false)
+  suppressReason String?
+  createdAt   DateTime @default(now())
+
+  task Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@index([taskId, fingerprint])
+  @@index([createdAt])
+}
+
+/// 系统运行元数据（调度锁等）
+model SystemMeta {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}

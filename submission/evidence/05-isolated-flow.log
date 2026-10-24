@@ -1,0 +1,36 @@
+
+===== 05-isolated-flow =====
+started: 2026-10-24T06:01:24.452Z
+command: node --import tsx scripts/isolated-evidence.mjs
+exitCode: 0
+----- stdout -----
+ISOLATED_DB file:C:/Users/Cris.Z/Desktop/同花顺/第一题/signalwatch/submission/evidence/isolated-submission.db
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": SQLite database "isolated-submission.db" at "file:C:/Users/Cris.Z/Desktop/同花顺/第一题/signalwatch/submission/evidence/isolated-submission.db"
+
+SQLite database isolated-submission.db created at file:C:/Users/Cris.Z/Desktop/同花顺/第一题/signalwatch/submission/evidence/isolated-submission.db
+
+1 migration found in prisma/migrations
+
+Applying migration `20261024052648_init`
+
+The following migration(s) have been applied:
+
+migrations/
+  └─ 20261024052648_init/
+    └─ migration.sql
+      
+All migrations have been successfully applied.
+WROTE C:\Users\Cris.Z\Desktop\同花顺\第一题\signalwatch\submission\evidence\isolated-flow-evidence.json
+{
+  "taskId": "cmvlzqqro0000lf3colzcjfke",
+  "triggered": true,
+  "threshold": 1700,
+  "price": 1650,
+  "version": 2,
+  "finalStatus": "ACTIVE",
+  "execs": 4
+}
+
+----- stderr -----

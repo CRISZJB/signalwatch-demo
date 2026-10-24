@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-10-24T06:40:40.000Z",
+  "round": "fix-before-submit-r2",
+  "encoding": "UTF-8",
+  "note": "正式 prisma/dev.db 未 reset/清空。隔离库用于本轮证据。",
+  "vitest": {
+    "testsPassed": 36,
+    "testsFailed": 0,
+    "filesPassed": 7,
+    "log": "submission/evidence/r2-01-vitest.utf8.txt"
+  },
+  "commands": [
+    { "name": "r2-01-vitest", "exitCode": 0, "log": "submission/evidence/r2-01-vitest.log" },
+    { "name": "r2-02-typecheck", "exitCode": 0, "log": "submission/evidence/r2-02-typecheck.log" },
+    { "name": "r2-03-lint", "exitCode": 0, "log": "submission/evidence/r2-03-lint.log" },
+    { "name": "r2-04-build", "exitCode": 0, "log": "submission/evidence/r2-04-build.log" },
+    { "name": "r2-05-dedup", "exitCode": 0, "json": "submission/evidence/dedup-evidence.json" },
+    { "name": "r2-06-isolated-flow", "exitCode": 0, "json": "submission/evidence/isolated-flow-evidence.json" },
+    { "name": "scheduler-verify", "exitCode": 0, "json": "submission/evidence/scheduler-verify.json" }
+  ],
+  "docCaseStats": {
+    "total": 30,
+    "passed": 29,
+    "partial": 1,
+    "failed": 0,
+    "notRun": 0,
+    "sumCheck": "29+1+0+0=30"
+  },
+  "keyEvidence": {
+    "dedup": "submission/evidence/dedup-evidence.json",
+    "scheduler": "submission/evidence/scheduler-verify.json",
+    "index": "submission/evidence/EVIDENCE_INDEX.md"
+  }
+}

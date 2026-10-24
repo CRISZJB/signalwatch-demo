@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// 监控任务
+model Task {
+  id                  String    @id @default(cuid())
+  name                String
+  status              String    @default("ACTIVE")
+  naturalLanguage     String
+  cooldownMinutes     Int       @default(30)
+  scheduleIntervalSec Int       @default(60)
+  currentVersion      Int       @default(1)
+  lastRunAt           DateTime?
+  lastAlertAt         DateTime?
+  lastError           String?
+  degradedReason      String?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  versions   RuleVersion[]
+  executions ExecutionLog[]
+  alerts     Alert[]
+}
+
+model RuleVersion {
+  id         String   @id @default(cuid())
+  taskId     String
+  version    Int
+  ruleJson   String
+  changeNote String?
+  createdAt  DateTime @default(now())
+
+  task Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@unique([taskId, version])
+  @@index([taskId])
+}
+
+model ExecutionLog {
+  id             String   @id @default(cuid())
+  taskId         String
+  ruleVersion    Int
+  outcome        String
+  triggered      Boolean  @default(false)
+  explanation    String
+  marketSnapshot String?
+  skipReason     String?
+  fingerprint    String?
+  durationMs     Int      @default(0)
+  createdAt      DateTime @default(now())
+
+  task Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@index([taskId, createdAt])
+}
+
+model Alert {
+  id             String   @id @default(cuid())
+  taskId         String
+  ruleVersion    Int
+  fingerprint    String
+  title          String
+  message        String
+  severity       String   @default("warning")
+  suppressed     Boolean  @default(false)
+  suppressReason String?
+  createdAt      DateTime @default(now())
+
+  task Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@index([taskId, fingerprint])
+  @@index([createdAt])
+}
+
+model SystemMeta {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}
